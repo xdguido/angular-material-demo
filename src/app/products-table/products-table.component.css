@@ -1,0 +1,18 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.table {
+    background-color: #181818;
+    border-radius: 4px;
+}
+.table-header {
+    background-color: #353535;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.table-cell {
+    text-align: center;
+    padding: 0.5rem;
+}
