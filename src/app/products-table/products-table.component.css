@@ -1,15 +1,16 @@
 .table-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 2rem;
 }
 .table {
     background-color: #181818;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 .table-header {
     background-color: #353535;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 .table-cell {

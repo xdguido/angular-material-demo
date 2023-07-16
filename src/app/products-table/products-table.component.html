@@ -1,12 +1,13 @@
 <div class="table-container">
-    <table class="table">
+    <h1>Products list</h1>
+    <table *ngIf="show" class="table">
         <tr>
-            <th class="table-header" *ngFor="let column of columnsToDisplay">{{column}}</th>
+            <th class="table-header" *ngFor="let column of columnsToDisplay">{{ column }}</th>
         </tr>
         <tr *ngFor="let product of productsList">
-            <td class="table-cell">{{product.id}}</td>
-            <td class="table-cell">{{product.name}}</td>
-            <td class="table-cell">{{product.price}}</td>
+            <td class="table-cell">{{ product.name }}</td>
+            <td class="table-cell">{{ product.price | currency }}</td>
         </tr>
     </table>
+    <button mat-flat-button (click)="toggleShow()">{{ show ? 'Hide' : 'Show' }}</button>
 </div>
